@@ -22,8 +22,8 @@
             <br>
             <select id="rol" name="rol" class="form-control"  required>
                 <option value="" disabled selected>Seleccione un rol</option>
-                <option value="admin">Administrador</option>
-                <option value="user">Empleado</option>
+                <option value="Administrador">Administrador</option>
+                <option value="Empleado">Empleado</option>
             </select>
         </div>
         <button type="button" id="submitBtn" class="small-button"><i class="fas fa-plus"></i> Agregar Usuario</button>

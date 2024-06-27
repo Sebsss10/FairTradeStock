@@ -1,4 +1,4 @@
-<<?php
+<?php
 // Función para obtener la conexión a la base de datos
 function obtenerConexion() {
     $servername = "localhost";

@@ -24,7 +24,7 @@
         </div>
         <div>
             <label for="descripcion">Descripción:</label>
-            <textarea id="descripcion" name="descripcion" required></textarea>
+            <input type = "text" id="descripcion" name="descripcion" required></textarea>
         </div>
         <div>
             <label for="precio">Precio:</label>
