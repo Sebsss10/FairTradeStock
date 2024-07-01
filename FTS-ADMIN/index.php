@@ -89,7 +89,7 @@
                             </a>
                         </li>
                         <li class="full-width">
-                            <a href="company.html" class="full-width">
+                            <a href="./?p=estadisticas" class="full-width">
                                 <div class="navLateral-body-cl">
                                     <i class="fas fa-chart-bar icon-menu"></i> <!-- Icono de estadísticas -->
                                 </div>
