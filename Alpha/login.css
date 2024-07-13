@@ -1,0 +1,91 @@
+body {
+  background-image: url('img/background.jpg');
+  /* Reemplaza 'img/background.jpg' con la ruta de tu imagen de fondo */
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.8);
+  /* Fondo blanco con opacidad */
+  padding: 20px;
+  /* Espacio interno */
+  border-radius: 15px;
+  /* Bordes redondeados */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  /* Sombra sutil */
+  max-width: 100%;
+  /* Ancho máximo para dispositivos pequeños */
+}
+
+.card {
+  border-radius: 15px; /* Redondea los bordes de la tarjeta */
+  background-color: rgba(255, 255, 255, 0.8); /* Ajusta la transparencia de la tarjeta */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Agrega una sombra sutil */
+}
+
+.card img {
+  border-radius: 15px 0 0 15px; /* Redondea los bordes de la imagen */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-body {
+  font-weight: bold; /* Establece la fuente en negrita */
+}
+
+.form-floating label {
+  font-weight: bold; /* Establece la fuente en negrita para las etiquetas de los campos flotantes */
+}
+
+.btn-custom {
+  background-color: #001f3f;
+  /* Color de fondo azul oscuro */
+  border: 2px solid #001f3f;
+  /* Borde sólido */
+  color: #ffffff;
+  /* Color del texto */
+  padding: 10px 20px;
+  /* Espaciado interno */
+  font-size: 16px;
+  /* Tamaño de fuente */
+  border-radius: 5px;
+  /* Bordes redondeados */
+  transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+  /* Transición suave */
+}
+
+.btn-custom:hover {
+  background-color: #003366;
+  /* Cambio de color al pasar el mouse */
+  border-color: #003366;
+  /* Cambio de color del borde al pasar el mouse */
+  color: #ffffff;
+  /* Cambio de color del texto al pasar el mouse */
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+    /* Reducir el espacio interno en dispositivos pequeños */
+  }
+
+  .card {
+    margin-top: 20px;
+    /* Espaciado superior en dispositivos pequeños */
+  }
+
+  .btn-custom {
+    padding: 8px 16px;
+    /* Reducir el espaciado interno del botón en dispositivos pequeños */
+    font-size: 14px;
+    /* Reducir el tamaño de fuente del botón en dispositivos pequeños */
+  }
+}

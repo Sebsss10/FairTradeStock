@@ -1,0 +1,17 @@
+#btnExportar {
+    background-color: #28a745; /* Verde para Excel */
+  }
+  
+  #btnExportarPDF {
+    background-color: #dc3545; /* Rojo para PDF */
+  }
+  
+  /* Efecto hover específico para cada botón */
+  #btnExportar:hover {
+    background-color: #218838; /* Un tono más oscuro de verde para Excel */
+  }
+  
+  #btnExportarPDF:hover {
+    background-color: #c82333; /* Un tono más oscuro de rojo para PDF */
+  }
+  
