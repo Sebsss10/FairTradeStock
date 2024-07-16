@@ -4,13 +4,28 @@ session_start();
 // Verificar si el usuario está autenticado
 if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
     // Redirigir a la página de inicio de sesión si no está autenticado
-    header('Location: ../../login/index.php');
+    header('Location: ../../Alpha/index.php');
     exit;
 }
 
+// Verificar si el usuario tiene el rol de 'Administrador'
+if ($_SESSION['rol'] !== 'Administrador') {
+    // Redirigir a la página de acceso denegado si no tiene el rol adecuado
+    header("Location: ../../Alpha/index.php");
+    exit();
+}
+
+
 // Obtener el nombre de usuario desde la sesión
 $usuario = $_SESSION['usuario'];
+$rol= $_SESSION['rol'];
+
+// Incluir archivo de verificación de sesión
+include('../Alpha/session_check.php');
 ?>
+
+
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -62,7 +77,7 @@ $usuario = $_SESSION['usuario'];
                 <figcaption>
                     <span>
                        <?php echo htmlspecialchars($usuario); ?><br>
-                        <small>Administrador</small>
+                        <small><?php echo htmlspecialchars($rol); ?></small>
                     </span>
                 </figcaption>
             </figure>
@@ -212,5 +227,6 @@ $usuario = $_SESSION['usuario'];
         </section>
     </section>
 </body>
+</html>
 
 </html>

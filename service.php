@@ -29,7 +29,6 @@
     <!-- Navbar Start -->
     <div class="container-fluid p-0">
         <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-lg-5">
-            <a href="index.html" class="navbar-brand ml-lg-3">
                 <img class="img-fluid" src="img/FairTradeStock.png" alt="FairTradeStock Logo">
             </a>
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
@@ -42,7 +41,7 @@
                     <a href="service.php" class="nav-item nav-link active">Servicios</a>
                     <a href="contact.php" class="nav-item nav-link">Contacto</a>
                 </div>
-                <a href="Alpha/index.html" class="btn btn-primary py-2 px-4">Iniciar Sesión</a>
+                <a href="Alpha/index.php" class="btn btn-primary py-2 px-4">Iniciar Sesión</a>
             </div>
         </nav>
     </div>
@@ -124,13 +123,11 @@
                     <div class="bg-primary py-5 px-4 px-sm-5">
                         <form method="post">
                             <div class="form-group">
-
-                                <input type="text" class="form-control border-0 p-4" placeholder="Nombre" required="required" id="name" name="name">
-                            </div>
-                            <div class="form-group">
-
-                                <input type="email" class="form-control border-0 p-4" placeholder="Correo Electrónico" required="required" id="email" name="email" required>
-                            </div>
+            <input type="text" class="form-control border-0 p-4" placeholder="Nombre" required="required" id="name" name="name" pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+" title="El nombre solo debe contener letras y espacios">
+        </div>
+        <div class="form-group"> 
+            <input type="email" class="form-control border-0 p-4" placeholder="Correo Electrónico" required="required" id="email" name="email" ppattern="[a-z0-9]+@[a-z0-9]+\.[a-z]{2,}" title="Solo se permiten letras minúsculas y números">
+        </div>
                             <div class="form-group">
 
                                 <input type="text" class="form-control border-0 p-4" placeholder="Asunto" required="required" data-validation-required-message="Ingrese un asunto" id="asunto" name="asunto" required>

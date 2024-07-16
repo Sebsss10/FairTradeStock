@@ -1,4 +1,4 @@
-    <?php
+<?php
     // Aquí iría el código PHP para obtener los productos desde la base de datos
     require 'conexion.php';
     $resTotal = $conn->query("SELECT id_producto, nombre FROM productos");

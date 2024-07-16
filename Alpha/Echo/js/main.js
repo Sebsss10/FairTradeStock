@@ -26,7 +26,7 @@ $(document).ready(function() {
         }).then((result) => {
             if (result.isConfirmed) {
                 isLoggedIn = false; // Actualizar el estado de autenticación
-                window.location.href = '/index.php'; // Redirigir si se confirma
+                window.location.href = "../logout.php"; // Redirigir si se confirma
             }
         });
     });
@@ -80,10 +80,7 @@ $(document).ready(function() {
         $(this).css('border', 'none');
     });
 
-    // Deshabilitar el clic derecho
-    //document.addEventListener('contextmenu', function(e) {
-    //    e.preventDefault();
-    //});
+
 
     // Deshabilitar ciertas teclas de función
     document.addEventListener('keydown', function(e) {
@@ -120,3 +117,4 @@ $(document).ready(function() {
         });
     });
 })(jQuery);
+

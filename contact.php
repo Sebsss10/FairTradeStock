@@ -23,9 +23,8 @@
 
 <body>
     <!-- Navbar Start -->
-    <div class="container-fluid p-0">
+   <div class="container-fluid p-0">
         <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-lg-5">
-            <a href="index.html" class="navbar-brand ml-lg-3">
                 <img class="img-fluid" src="img/FairTradeStock.png" alt="FairTradeStock Logo">
             </a>
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
@@ -38,23 +37,12 @@
                     <a href="service.php" class="nav-item nav-link">Servicios</a>
                     <a href="contact.php" class="nav-item nav-link active">Contacto</a>
                 </div>
-                <a href="Alpha/index.html" class="btn btn-primary py-2 px-4">Iniciar Sesión</a>
+                <a href="Alpha/index.php" class="btn btn-primary py-2 px-4">Iniciar Sesión</a>
             </div>
         </nav>
     </div>
     <!-- Navbar End -->
     <!-- Header Start -->
-    <div class="jumbotron jumbotron-fluid mb-5">
-        <div class="container text-center py-5">
-            <h1 class="text-white display-3">FairTradeStock</h1>
-            <div class="d-inline-flex align-items-center text-white">
-                <i class="fa fa-circle px-3"></i>
-                <p class="m-0">Contacto</p>
-            </div>
-        </div>
-    </div>
-    <!-- Header End -->
-    <!-- Contact Start -->
     <div class="container-fluid py-5">
         <div class="container">
             <div class="row">

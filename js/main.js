@@ -82,5 +82,27 @@
         }
     });
     
+    // Deshabilitar el clic derecho
+    document.addEventListener('contextmenu', function(e) {
+        e.preventDefault();
+    });
+
+    // Deshabilitar ciertas teclas de función
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'F12' || 
+            (e.ctrlKey && e.shiftKey && e.key === 'I') || 
+            (e.ctrlKey && e.shiftKey && e.key === 'J') || 
+            (e.ctrlKey && e.key === 'U')) {
+            e.preventDefault();
+        }
+    });
+
+    // Deshabilitar navegación hacia atrás y adelante solo si el usuario no está autenticado
+    if (!isLoggedIn) {
+        history.pushState(null, null, location.href);
+        window.addEventListener('popstate', function(event) {
+            history.pushState(null, null, location.href);
+        });
+    }
 })(jQuery);
 

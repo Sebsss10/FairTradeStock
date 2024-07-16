@@ -1,3 +1,4 @@
+
 <?php
 // Incluir el archivo con las funciones y la conexión a la base de datos
 require 'conteos.php';

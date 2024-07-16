@@ -26,7 +26,7 @@ $(document).ready(function() {
         }).then((result) => {
             if (result.isConfirmed) {
                 isLoggedIn = false; // Actualizar el estado de autenticación
-                window.location.href = '/index.php'; // Redirigir si se confirma
+                window.location.href = "../logout.php"; // Redirigir si se confirma
             }
         });
     });

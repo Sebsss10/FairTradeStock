@@ -19,10 +19,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             // Establecer la sesión
             $_SESSION['loggedin'] = true;
             $_SESSION['usuario'] = $usuario;
+         
 
             // Obtener el rol del usuario
             $row = $result->fetch_assoc();
             $rol = $row['rol'];
+            $_SESSION['rol'] = $rol;
 
             // Devolver el rol como respuesta
             echo $rol;
@@ -36,4 +38,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt->close();
     $conn->close();
 }
-?>
+?> 
